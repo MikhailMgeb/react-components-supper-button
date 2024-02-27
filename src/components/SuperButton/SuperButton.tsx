@@ -4,23 +4,6 @@ import { FC } from 'react';
 
 import { cnSuperButton } from './SuperButton.nameclass';
 
-// type SuperButtonProps = {
-//     isDisabled: boolean;
-//     children: string;
-//     className: string;
-//     isActive?: boolean;
-// }
-
-// const SuperButton: FC<SuperButtonProps> = ({ children, className, isDisabled, isActive }) => {
-//     return (
-//         <div className={cnSuperButton()}>
-//             <div className={cnSuperButton('Container')}>
-//                 <button className={cnSuperButton({ className })} disabled={isDisabled} >{children}</button>
-//             </div>
-//         </div>
-//     );
-// }
-
 type SuperButtonProps = {
     theme: 'light' | 'dark';
     typeBackGround: 'primary' | 'secondary';
