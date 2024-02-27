@@ -1,23 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+
+import { SuperButton } from './components/SuperButton/SuperButton';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <SuperButton
+          theme={'light'}
+          typeBackGround={'primary'}
+          isDisabled={false}
+          children={'Hello'} />
+        <SuperButton
+          theme={'light'}
+          typeBackGround={'secondary'}
+          isDisabled={false}
+          children={'Hello'} />
+        <SuperButton
+          theme={'dark'}
+          typeBackGround={'primary'}
+          isDisabled={true}
+          children={'Hello'} />
+        <SuperButton
+          theme={'dark'}
+          typeBackGround={'secondary'}
+          isDisabled={false}
+          children={'Hello'} />
+
       </header>
     </div>
   );
