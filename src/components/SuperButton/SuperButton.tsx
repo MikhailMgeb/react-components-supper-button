@@ -1,30 +1,31 @@
-import './SuperButton.css';
-
 import { FC } from 'react';
 
 import { cnSuperButton } from './SuperButton.nameclass';
 
+import './SuperButton.css';
+
 type SuperButtonProps = {
     theme: 'light' | 'dark';
-    typeBackGround: 'primary' | 'secondary';
+    type: 'primary' | 'secondary';
     isDisabled: boolean;
-    children: string;
+    text: string;
 }
 
-const SuperButton: FC<SuperButtonProps> = ({ theme, typeBackGround, isDisabled, children }) => {
-
-    const classCss = `${theme}-${typeBackGround}`
+const SuperButton: FC<SuperButtonProps> = ({ theme, type, isDisabled, text }) => {
+    const classNameChose = {
+        theme,
+        type,
+        isDisabled,
+    }
 
     return (
-        <div className={cnSuperButton()}>
-            <div className={cnSuperButton('Container')}>
+        <div className={cnSuperButton('Container')}>
                 <button
-                    className={cnSuperButton('Button', { type: classCss })}
+                    className={cnSuperButton('Button', classNameChose)}
                     disabled={isDisabled} >
-                    {children}
+                    {text}
                 </button>
-            </div>
-        </div> 
+        </div>
     );
 }
 
