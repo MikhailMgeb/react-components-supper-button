@@ -2,7 +2,6 @@ import { cnButtonLogOut } from './ButtonLogOut.classname';
 
 import { FC } from 'react';
 
-
 import './ButtonLogOut.css';
 
 type ButtonLogOutProps = {

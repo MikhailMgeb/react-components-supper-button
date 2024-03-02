@@ -10,10 +10,10 @@ import { ButtonLogOut } from './components/ProfileScreens/ButtonLogOut/ButtonLog
 function App() {
   return (
     <div className="App">
-      <Header headerText={'Profile'} />
-      <UserProfile imageUser={imageUser} name={'Jane Doe'} description={'This is a small bio description to let users express themselves'} />
-      <SettingMenu/>
-      <ButtonLogOut text={'Logout'} isDisabled={false} />
+      <Header headerText="Profile" />
+      <UserProfile imageUser={imageUser} name="Jane Doe" description="This is a small bio description to let users express themselves" />
+      <SettingMenu />
+      <ButtonLogOut text="Logout" isDisabled={false} />
     </div>
   );
 }

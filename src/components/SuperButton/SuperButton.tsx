@@ -19,12 +19,12 @@ const SuperButton: FC<SuperButtonProps> = ({ theme, type, isDisabled, text }) =>
     }
 
     return (
-        <div className={cnSuperButton('Container')}>
-                <button
-                    className={cnSuperButton('Button', classNameChose)}
-                    disabled={isDisabled} >
-                    {text}
-                </button>
+        <div className={cnSuperButton()}>
+            <button
+                className={cnSuperButton('Button', classNameChose)}
+                disabled={isDisabled} >
+                {text}
+            </button>
         </div>
     );
 }

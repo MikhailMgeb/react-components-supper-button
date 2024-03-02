@@ -15,7 +15,7 @@ const Header: FC<HeaderProps> = ({ headerText }) => {
         <header className={cnHeader()}>
             <div className={cnHeader('Container')}>
                 <button className={cnHeader('Button')}>
-                    <img className={cnHeader('Button-img')} src={svgBackButton} alt='button-logo'/>
+                    <img className={cnHeader('Button-img')} src={svgBackButton} alt="button-logo" />
                 </button>
                 <h2>{headerText}</h2>
             </div>
