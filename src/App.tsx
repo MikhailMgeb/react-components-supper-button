@@ -1,19 +1,17 @@
 import React from 'react';
 
+import { SuperButton } from './components/SuperButton/SuperButton';
+
 import './App.css';
-import { Header } from './components/ProfileScreens/Header/Header'
-import { UserProfile } from './components/ProfileScreens/UserProfile/UserProfile';
-import imageUser from './components/ProfileScreens/image/imageUser.jpg';
-import { SettingMenu } from './components/ProfileScreens/SettingsMenu/SettingsMenu';
-import { ButtonLogOut } from './components/ProfileScreens/ButtonLogOut/ButtonLogOut';
+
 
 function App() {
   return (
     <div className="App">
-      <Header headerText="Profile" />
-      <UserProfile imageUser={imageUser} name="Jane Doe" description="This is a small bio description to let users express themselves" />
-      <SettingMenu />
-      <ButtonLogOut text="Logout" isDisabled={false} />
+      <SuperButton theme={'light'} type={'primary'} isDisabled={false} text={'Hello'} />
+      <SuperButton theme={'light'} type={'secondary'} isDisabled={false} text={'Hello'} />
+      <SuperButton theme={'dark'} type={'primary'} isDisabled={false} text={'Hello'} />
+      <SuperButton theme={'dark'} type={'secondary'} isDisabled={false} text={'Hello'} />
     </div>
   );
 }
