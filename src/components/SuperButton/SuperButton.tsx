@@ -15,7 +15,7 @@ const SuperButton: FC<SuperButtonProps> = ({ theme, type, isDisabled, text }) =>
     return (
         <div className={cnSuperButton()}>
             <button
-                className={cnSuperButton('Button', {theme, type , isDisabled} )}
+                className={cnSuperButton('Button', { theme, type, isDisabled })}
                 disabled={isDisabled} >
                 {text}
             </button>
